@@ -12,8 +12,8 @@ link:
 	ln -sf `pwd`/vim $$HOME/.vim
 
 unlink:
-	rm -f $$HOME/.vim 
-	rm -f $$HOME/.vimrc
+	rm -rf $$HOME/.vim 
+	rm -rf $$HOME/.vimrc
 
 install: link download_fonts install_vundle etc
 
