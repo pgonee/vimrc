@@ -23,6 +23,7 @@ clean: uninstall
 
 download_fonts:
 ifneq ($(FONT_PATH), unknown)
+	mkdir -p $(FONT_PATH)
 	wget "http://downloads.sourceforge.net/project/dejavu/dejavu/2.34/dejavu-fonts-ttf-2.34.zip?r=http%3A%2F%2Fdejavu-fonts.org%2Fwiki%2FDownload&ts=1380695998&use_mirror=jaist" -O font.zip
 	mkdir -p ./fonts
 	unzip font.zip -d ./fonts
