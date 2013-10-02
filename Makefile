@@ -23,13 +23,13 @@ clean: uninstall
 
 download_fonts:
 ifneq ($(FONT_PATH), unknown)
-	wget "http://downloads.sourceforge.net/project/dejavu/dejavu/2.34/dejavu-fonts-ttf-2.34.tar.bz2?r=http%3A%2F%2Fdejavu-fonts.org%2Fwiki%2FDownload&ts=1380688509&use_mirror=jaist" -O font.tar.bz2
+	wget "http://downloads.sourceforge.net/project/dejavu/dejavu/2.34/dejavu-fonts-ttf-2.34.zip?r=http%3A%2F%2Fdejavu-fonts.org%2Fwiki%2FDownload&ts=1380695998&use_mirror=jaist" -O font.zip
 	mkdir -p ./fonts
-	tar xvzf font.tar.bz2 --directory=./fonts
+	unzip font.zip -d ./fonts
 	mv ./fonts/*/* ./fonts
 	cp -R ./fonts/ttf/*.ttf $(FONT_PATH)
 	rm -rf ./fonts
-	rm -rf ./font.tar.bz2
+	rm -rf ./font.zip
 else
 	echo "Unknown font path, uname is $(OS), path is $(FONT_PATH)"
 endif
