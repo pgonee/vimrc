@@ -30,11 +30,9 @@ Bundle 'ZenCoding.vim'
 Bundle 'airblade/vim-gitgutter'
 
 filetype plugin indent on
-
 " vundle setting ---
 
-"Default color scheme
-colorscheme desert
+colorscheme ir_black
 syntax on
 
 set nu
@@ -47,7 +45,6 @@ set modeline
 set encoding=utf-8 fileencodings=utf-8,cp949,ucs-bom,korea,iso-2022-kr
 set mouse=a
 
-" Tab setting
 au FileType cpp    setl ts=4 sw=4 sts=4
 au FileType yaml   setl ts=2 sw=2 sts=2
 au FileType html   setl ts=2 sw=2 sts=2
@@ -57,76 +54,47 @@ au FileType make   setl ts=4 sw=4 sts=4 noet
 au BufRead,BufNewFile *.go set filetype=go
 au FileType go setl ts=4 sw=4 sts=4
 
-"English spelling checker.
 "setlocal spell spelllang=en_us
 
-"GUI Vim configurations.
 if has("gui_running")
   set imd
-  "set guifont=NanumGothicCoding\ 14
   set guifont=DejaVuSansMono\ 14
   colorscheme ir_black
   set guioptions-=T
   set guioptions-=m
   highlight SpellBad guibg=red guifg=white
-  hi Search guibg=green guifg=red
+  hi Search guibg=gray guifg=blue
 endif
 
-"MacVim-specific configurations.
 if has("gui_macvim")
-  " I prefer NanumGothicCoding as a coding font in MacVim.
-  "set guifont=NanumGothicCoding:h16.00
   set guifont=DejaVuSansMono:h14.00
   set transparency=0
   set guioptions=egmrLt
 endif
 
-" search highlight
 set hlsearch
-hi Search  ctermbg=green ctermfg=red
+hi Search  ctermbg=gray ctermfg=blue
 
-""" columns > 80 highlight
 highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
-"match OverLength /\%81v.\+/
-autocmd BufNewFile,BufRead *.py match OverLength /\%81v.\+/
+match OverLength /\%81v.\+/
+"autocmd BufNewFile,BufRead *.py match OverLength /\%81v.\+/
 
-" plugins setting
 let $JS_CMD='node'
 let NERDTreeIgnore = ['\.pyc$', '\.class$']
 let g:gitgutter_enabled = 1
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
-call CmdAlias('tn', 'tabnew')
-call CmdAlias('tc', 'tabclose')
-call CmdAlias('tree', 'NERDTree')
-call CmdAlias('log', 'Glog')
-call CmdAlias('status', 'Gstatus')
-call CmdAlias('diff', 'Gsdiff')
 
-function! SetColorScheme(cs)
-    execute "colorscheme ".a:cs
-    execute "highlight SpellBad guibg=red guifg=white"
-    execute "hi Search guibg=green guifg=red"
-    execute "set hlsearch"
-    execute "hi Search  ctermbg=green ctermfg=red"
-    execute "highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red"
-    execute "autocmd BufNewFile,BufRead *.py match OverLength /\%81v.\+/"
-endfunction
+nnoremap <leader>tt :tabnew<CR>
+nnoremap <leader>tw :tabnext<CR>
+nnoremap <leader>c :let @/ = ""<CR>
+nnoremap <leader>d :NERDTree<CR>
+nnoremap <leader>s :w<CR>
+nnoremap <leader>x :x<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>w <ESC><C-w>w
+nnoremap <leader>p <ESC><C-w>p
+nnoremap <leader>a i
 
-" shortcuts
-nnoremap <C-t> :tabnext<CR>
-nnoremap <leader><leader>c :let @/ = ""<CR>
-nnoremap <leader><leader>1 :call SetColorScheme("ir_black")<CR>
-nnoremap <leader><leader>2 :call SetColorScheme("blackdust")<CR>
-nnoremap <leader><leader>3 :call SetColorScheme("corporation")<CR>
-nnoremap <leader><leader>4 :call SetColorScheme("jellybeans")<CR>
-nnoremap <leader><leader>5 :call SetColorScheme("molokai")<CR>
-nnoremap <leader><leader>6 :call SetColorScheme("github")<CR>
-nnoremap <leader><leader>nt :NERDTree<CR>
-nnoremap <leader><leader>s :w<CR>
-nnoremap <leader><leader>x :x<CR>
-nnoremap <leader><leader>q :q<CR>
-
-" Etc.
 function! SearchDash()
   let s:browser = "/usr/bin/open"
   let s:searchString = getline("'<")[getpos("'<")[2]-1:getpos("'>")[2]-1]
