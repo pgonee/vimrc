@@ -29,6 +29,8 @@ Bundle 'Markdown'
 Bundle 'ZenCoding.vim'
 Bundle 'airblade/vim-gitgutter'
 
+Bundle 'AutoComplPop'
+
 filetype plugin indent on
 " vundle setting ---
 
