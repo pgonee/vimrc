@@ -50,6 +50,8 @@ au FileType cpp    setl ts=4 sw=4 sts=4
 au FileType yaml   setl ts=2 sw=2 sts=2
 au FileType html   setl ts=2 sw=2 sts=2
 au FileType javascript setl ts=2 sw=2 sts=2
+au FileType jinja  setl ts=2 sw=2 sts=2
+au FileType htmldjango setl ts=2 sw=2 sts=2
 au FileType make   setl ts=4 sw=4 sts=4 noet
 
 au BufRead,BufNewFile *.go set filetype=go
@@ -76,8 +78,8 @@ endif
 set hlsearch
 hi Search  ctermbg=gray ctermfg=blue
 
-highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
-match OverLength /\%81v.\+/
+"highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
+"match OverLength /\%81v.\+/
 "autocmd BufNewFile,BufRead *.py match OverLength /\%81v.\+/
 
 let $JS_CMD='node'
