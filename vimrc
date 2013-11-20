@@ -30,6 +30,8 @@ Bundle 'ZenCoding.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SuperTab'
 
+Bundle 'jellybeans.vim'
+
 filetype plugin indent on
 " vundle setting ---
 
@@ -62,7 +64,7 @@ au FileType go setl ts=4 sw=4 sts=4
 if has("gui_running")
   set imd
   set guifont=DejaVuSansMono\ 14
-  colorscheme ir_black
+  colorscheme jellybeans
   set guioptions-=T
   set guioptions-=m
   highlight SpellBad guibg=red guifg=white
