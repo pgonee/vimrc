@@ -30,12 +30,16 @@ Bundle 'ZenCoding.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SuperTab'
 
-Bundle 'jellybeans.vim'
+Bundle 'proton'
+Bundle 'wombat256.vim'
+Bundle 'twilight'
 
 filetype plugin indent on
 " vundle setting ---
 
-colorscheme ir_black
+"colorscheme ir_black
+colorscheme jellybeans
+"colorscheme molokai
 syntax on
 
 set nu
@@ -64,7 +68,16 @@ au FileType go setl ts=4 sw=4 sts=4
 if has("gui_running")
   set imd
   set guifont=DejaVuSansMono\ 14
+
+  "colorscheme ir_black
+  "colorscheme wombat256mod
   colorscheme jellybeans
+  "colorscheme twilight
+  "colorscheme proton
+  "colorscheme corporation
+  "colorscheme blackdust
+  "colorscheme molokai
+
   set guioptions-=T
   set guioptions-=m
   highlight SpellBad guibg=red guifg=white
