@@ -39,7 +39,6 @@ filetype plugin indent on
 
 "colorscheme ir_black
 colorscheme jellybeans
-"colorscheme molokai
 syntax on
 
 set nu
@@ -66,28 +65,31 @@ au FileType go setl ts=4 sw=4 sts=4
 "setlocal spell spelllang=en_us
 
 if has("gui_running")
-  set imd
-  set guifont=DejaVuSansMono\ 14
+    set imd
+    "set guifont=DejaVuSansMono\ 14
+    set guifont=Inconsolata\ 16
 
-  "colorscheme ir_black
-  "colorscheme wombat256mod
-  colorscheme jellybeans
-  "colorscheme twilight
-  "colorscheme proton
-  "colorscheme corporation
-  "colorscheme blackdust
-  "colorscheme molokai
 
-  set guioptions-=T
-  set guioptions-=m
-  highlight SpellBad guibg=red guifg=white
-  hi Search guibg=gray guifg=blue
+    "colorscheme ir_black
+    "colorscheme wombat256mod
+    colorscheme jellybeans
+    "colorscheme twilight
+    "colorscheme proton
+    "colorscheme corporation
+    "colorscheme blackdust
+    "colorscheme molokai
+
+    set guioptions-=T
+    set guioptions-=m
+    highlight SpellBad guibg=red guifg=white
+    hi Search guibg=gray guifg=blue
 endif
 
 if has("gui_macvim")
-  set guifont=DejaVuSansMono:h14.00
-  set transparency=0
-  set guioptions=egmrLt
+    "set guifont=DejaVuSansMono:h14.00
+    set guifont=Inconsolata:h16.00
+    set transparency=0
+    set guioptions=egmrLt
 endif
 
 set hlsearch
@@ -105,7 +107,7 @@ runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
 nnoremap <leader>c :let @/ = ""<CR>
-nnoremap <leader>d :NERDTree<CR>
+nnoremap <leader>dd :NERDTree<CR>
 nnoremap <leader>s :w<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>q :q<CR>
@@ -114,21 +116,21 @@ nnoremap <leader>p <ESC><C-w>p
 nnoremap <leader>a i
 
 function! SearchDash()
-  let s:browser = "/usr/bin/open"
-  let s:searchString = getline("'<")[getpos("'<")[2]-1:getpos("'>")[2]-1]
-  let s:url = "\"dash://".s:searchString."\""
-  let s:cmd = "silent ! " . s:browser . " " . s:url
-  execute s:cmd
-  redraw!
+    let s:browser = "/usr/bin/open"
+    let s:searchString = getline("'<")[getpos("'<")[2]-1:getpos("'>")[2]-1]
+    let s:url = "\"dash://".s:searchString."\""
+    let s:cmd = "silent ! " . s:browser . " " . s:url
+    execute s:cmd
+    redraw!
 endfunction
 map <leader><leader>d :call SearchDash()<CR>
 
 function! SearchGoogle()
-  let s:browser = "/usr/bin/open"
-  let s:searchString = getline("'<")[getpos("'<")[2]-1:getpos("'>")[2]-1]
-  let s:url = "\"http://www.google.co.kr/search?q=".s:searchString."\""
-  let s:cmd = "silent ! " . s:browser . " " . s:url
-  execute s:cmd
-  redraw!
+    let s:browser = "/usr/bin/open"
+    let s:searchString = getline("'<")[getpos("'<")[2]-1:getpos("'>")[2]-1]
+    let s:url = "\"http://www.google.co.kr/search?q=".s:searchString."\""
+    let s:cmd = "silent ! " . s:browser . " " . s:url
+    execute s:cmd
+    redraw!
 endfunction
 map <leader><leader>g :call SearchGoogle()<CR>
