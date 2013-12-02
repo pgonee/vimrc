@@ -9,11 +9,12 @@ Bundle 'L9'
 Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 Bundle 'cmdalias.vim'
-Bundle 'EasyMotion'
 Bundle 'fugitive.vim'
 Bundle 'pyflakes.vim'
 Bundle 'vim-flake8'
 Bundle 'jslint.vim'
+Bundle 'ctrlp.vim'
+Bundle 'Gundo'
 
 Bundle 'pathogen.vim'
 
@@ -37,8 +38,8 @@ Bundle 'twilight'
 filetype plugin indent on
 " vundle setting ---
 
-"colorscheme ir_black
-colorscheme jellybeans
+colorscheme ir_black
+"colorscheme jellybeans
 syntax on
 
 set nu
@@ -70,9 +71,9 @@ if has("gui_running")
     set guifont=Inconsolata\ 16
 
 
-    "colorscheme ir_black
+    colorscheme ir_black
     "colorscheme wombat256mod
-    colorscheme jellybeans
+    "colorscheme jellybeans
     "colorscheme twilight
     "colorscheme proton
     "colorscheme corporation
@@ -104,6 +105,9 @@ let NERDTreeIgnore = ['\.pyc$', '\.class$']
 let g:gitgutter_enabled = 1
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc    " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
 nnoremap <leader>c :let @/ = ""<CR>
@@ -114,6 +118,7 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>w <ESC><C-w>w
 nnoremap <leader>p <ESC><C-w>p
 nnoremap <leader>a i
+nnoremap <leader>p :CtrlP<CR>
 
 function! SearchDash()
     let s:browser = "/usr/bin/open"
