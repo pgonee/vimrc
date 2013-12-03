@@ -18,6 +18,7 @@ Bundle 'ctrlp.vim'
 Bundle 'Gundo'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SuperTab'
+Bundle 'Syntastic'
 
 " Language
 Bundle 'go.vim'
@@ -33,8 +34,8 @@ Bundle 'JavaScript-syntax'
 Bundle 'jslint.vim'
 
 " python
-Bundle 'pyflakes.vim'
 Bundle 'vim-flake8'
+Bundle 'virtualenv.vim'
 
 " Color schemes
 Bundle 'proton'
@@ -113,6 +114,11 @@ runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc    " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+"let g:syntastic_auto_loc_list=1
 
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
