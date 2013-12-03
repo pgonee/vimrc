@@ -33,10 +33,8 @@ Bundle 'JavaScript-syntax'
 Bundle 'jslint.vim'
 
 " python
-"Bundle 'pyflakes.vim'
-"Bundle 'python.vim'
-"Bundle 'vim-flake8'
-Bundle 'Python-mode-klen'
+Bundle 'pyflakes.vim'
+Bundle 'vim-flake8'
 
 " Color schemes
 Bundle 'proton'
