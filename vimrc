@@ -36,7 +36,7 @@ Bundle 'jslint.vim'
 "Bundle 'pyflakes.vim'
 "Bundle 'python.vim'
 "Bundle 'vim-flake8'
-Bundle 'klen/python-mode'
+Bundle 'Python-mode-klen'
 
 " Color schemes
 Bundle 'proton'
