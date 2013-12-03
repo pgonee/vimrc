@@ -4,33 +4,41 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
+" base
 Bundle 'gmarik/vundle'
 Bundle 'L9'
+Bundle 'pathogen.vim'
+Bundle 'cmdalias.vim'
+
+" Utilities
 Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
-Bundle 'cmdalias.vim'
 Bundle 'fugitive.vim'
-Bundle 'pyflakes.vim'
-Bundle 'vim-flake8'
-Bundle 'jslint.vim'
 Bundle 'ctrlp.vim'
 Bundle 'Gundo'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'SuperTab'
 
-Bundle 'pathogen.vim'
-
-Bundle 'python.vim'
-Bundle 'JavaScript-syntax'
+" Language
 Bundle 'go.vim'
 Bundle 'cpp.vim'
 Bundle 'c.vim'
 Bundle 'mako.vim'
 Bundle 'Jinja'
 Bundle 'Markdown'
-
 Bundle 'ZenCoding.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'SuperTab'
 
+" Javascript
+Bundle 'JavaScript-syntax'
+Bundle 'jslint.vim'
+
+" python
+"Bundle 'pyflakes.vim'
+"Bundle 'python.vim'
+"Bundle 'vim-flake8'
+Bundle 'klen/python-mode'
+
+" Color schemes
 Bundle 'proton'
 Bundle 'wombat256.vim'
 Bundle 'twilight'
