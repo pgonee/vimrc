@@ -124,6 +124,8 @@ let g:syntastic_enable_signs=1
 let g:ConqueTerm_Color = 1
 "let g:ConqueTerm_TERM = 'xterm-256color'
 
+let b:javascript_fold = 0
+
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
 nnoremap <leader>] :let @/ = ""<CR>
