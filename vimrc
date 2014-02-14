@@ -30,12 +30,10 @@ Bundle 'Markdown'
 Bundle 'ZenCoding.vim'
 
 " Javascript
-Bundle 'JavaScript-syntax'
-Bundle 'jslint.vim'
+"Bundle 'jslint.vim'
 
 " python
 Bundle 'vim-flake8'
-Bundle 'virtualenv.vim'
 
 " Color schemes
 Bundle 'proton'
@@ -110,7 +108,10 @@ hi Search  ctermbg=gray ctermfg=blue
 let $JS_CMD='node'
 let NERDTreeIgnore = ['\.pyc$', '\.class$']
 let g:gitgutter_enabled = 1
+
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
+call CmdAlias('workon', 'VirtualEnvActivate')
+call CmdAlias('deactivate', 'VirtualEnvDeactivate')
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc    " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
@@ -120,9 +121,12 @@ let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 "let g:syntastic_auto_loc_list=1
 
+let g:ConqueTerm_Color = 1
+"let g:ConqueTerm_TERM = 'xterm-256color'
+
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
-nnoremap <leader>c :let @/ = ""<CR>
+nnoremap <leader>] :let @/ = ""<CR>
 nnoremap <leader>dd :NERDTree<CR>
 nnoremap <leader>s :w<CR>
 nnoremap <leader>x :x<CR>
