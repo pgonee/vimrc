@@ -30,7 +30,7 @@ Bundle 'Markdown'
 Bundle 'ZenCoding.vim'
 
 " Javascript
-"Bundle 'jslint.vim'
+Bundle 'jelera/vim-javascript-syntax'
 
 " python
 Bundle 'vim-flake8'
