@@ -139,6 +139,8 @@ nnoremap <leader>w <ESC><C-w>w
 nnoremap <leader>p <ESC><C-w>p
 nnoremap <leader>a i
 nnoremap <leader>p :CtrlP<CR>
+vnoremap <C-Insert> "+y
+vnoremap <S-Insert> "+gP
 
 function! SearchDash()
     let s:browser = "/usr/bin/open"
