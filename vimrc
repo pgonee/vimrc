@@ -39,6 +39,7 @@ Bundle 'vim-flake8'
 Bundle 'proton'
 Bundle 'wombat256.vim'
 Bundle 'twilight'
+Bundle 'tomasr/molokai'
 
 filetype plugin indent on
 " vundle setting ---
@@ -73,17 +74,18 @@ au FileType go setl ts=4 sw=4 sts=4
 if has("gui_running")
     set imd
     "set guifont=DejaVuSansMono\ 14
-    set guifont=Inconsolata\ 16
+    set guifont=Inconsolata\ 14
 
-
-    colorscheme ir_black
+    "colorscheme ir_black
     "colorscheme wombat256mod
     "colorscheme jellybeans
     "colorscheme twilight
     "colorscheme proton
     "colorscheme corporation
     "colorscheme blackdust
-    "colorscheme molokai
+    colorscheme molokai
+    let g:molokai_original = 1
+    set background=dark
 
     set guioptions-=T
     set guioptions-=m
@@ -137,6 +139,8 @@ nnoremap <leader>w <ESC><C-w>w
 nnoremap <leader>p <ESC><C-w>p
 nnoremap <leader>a i
 nnoremap <leader>p :CtrlP<CR>
+vnoremap <C-Insert> "+y
+vnoremap <S-Insert> "+gP
 
 function! SearchDash()
     let s:browser = "/usr/bin/open"
