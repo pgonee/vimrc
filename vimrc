@@ -27,7 +27,7 @@ Bundle 'c.vim'
 Bundle 'mako.vim'
 Bundle 'Jinja'
 Bundle 'Markdown'
-Bundle 'ZenCoding.vim'
+Bundle 'mattn/emmet-vim'
 
 " Javascript
 Bundle "pangloss/vim-javascript"
