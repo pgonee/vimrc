@@ -74,7 +74,7 @@ au FileType go setl ts=4 sw=4 sts=4
 if has("gui_running")
     set imd
     "set guifont=DejaVuSansMono\ 14
-    set guifont=Inconsolata\ 14
+    set guifont=Inconsolata\ Bold\ 14
 
     "colorscheme ir_black
     "colorscheme wombat256mod
