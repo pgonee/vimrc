@@ -76,16 +76,16 @@ if has("gui_running")
     "set guifont=DejaVuSansMono\ 14
     set guifont=Inconsolata\ 14
 
-    "colorscheme ir_black
+    colorscheme ir_black
     "colorscheme wombat256mod
     "colorscheme jellybeans
     "colorscheme twilight
     "colorscheme proton
     "colorscheme corporation
     "colorscheme blackdust
-    colorscheme molokai
-    let g:molokai_original = 1
-    set background=dark
+    "colorscheme molokai
+    "let g:molokai_original = 1
+    "set background=dark
 
     set guioptions-=T
     set guioptions-=m
