@@ -22,7 +22,6 @@ Bundle 'Syntastic'
 
 " Language
 Bundle 'go.vim'
-Bundle 'cpp.vim'
 Bundle 'c.vim'
 Bundle 'mako.vim'
 Bundle 'Jinja'
@@ -35,11 +34,13 @@ Bundle "pangloss/vim-javascript"
 " python
 Bundle 'vim-flake8'
 
+" color
+Bundle 'jellybeans.vim'
+
 filetype plugin indent on
 " vundle setting ---
 
 colorscheme ir_black
-"colorscheme jellybeans
 syntax on
 
 set nu
@@ -69,7 +70,7 @@ if has("gui_running")
     set imd
     set guifont=Inconsolata\ Bold\ 14
 
-    colorscheme ir_black
+    colorscheme jellybeans
 
     set guioptions-=T
     set guioptions-=m
@@ -78,7 +79,6 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-    "set guifont=DejaVuSansMono:h14.00
     set guifont=Inconsolata:h16.00
     set transparency=0
     set guioptions=egmrLt
@@ -105,10 +105,6 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
-"let g:syntastic_auto_loc_list=1
-
-let g:ConqueTerm_Color = 1
-"let g:ConqueTerm_TERM = 'xterm-256color'
 
 let b:javascript_fold = 0
 
