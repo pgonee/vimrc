@@ -35,12 +35,6 @@ Bundle "pangloss/vim-javascript"
 " python
 Bundle 'vim-flake8'
 
-" Color schemes
-Bundle 'proton'
-Bundle 'wombat256.vim'
-Bundle 'twilight'
-Bundle 'tomasr/molokai'
-
 filetype plugin indent on
 " vundle setting ---
 
@@ -73,19 +67,9 @@ au FileType go setl ts=4 sw=4 sts=4
 
 if has("gui_running")
     set imd
-    "set guifont=DejaVuSansMono\ 14
     set guifont=Inconsolata\ Bold\ 14
 
     colorscheme ir_black
-    "colorscheme wombat256mod
-    "colorscheme jellybeans
-    "colorscheme twilight
-    "colorscheme proton
-    "colorscheme corporation
-    "colorscheme blackdust
-    "colorscheme molokai
-    "let g:molokai_original = 1
-    "set background=dark
 
     set guioptions-=T
     set guioptions-=m
