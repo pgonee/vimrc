@@ -82,6 +82,9 @@ if has("gui_macvim")
     set guifont=Inconsolata:h16.00
     set transparency=0
     set guioptions=egmrLt
+
+    set vb
+    set eb
 endif
 
 set hlsearch
