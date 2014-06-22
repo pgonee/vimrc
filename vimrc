@@ -27,12 +27,11 @@ Bundle 'mako.vim'
 Bundle 'Jinja'
 Bundle 'Markdown'
 Bundle 'mattn/emmet-vim'
-
-" Javascript
 Bundle "pangloss/vim-javascript"
-
-" python
 Bundle 'vim-flake8'
+Bundle 'groenewege/vim-less'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'kchmck/vim-coffee-script'
 
 " color
 Bundle 'jellybeans.vim'
@@ -57,6 +56,8 @@ au FileType cpp    setl ts=4 sw=4 sts=4
 au FileType yaml   setl ts=2 sw=2 sts=2
 au FileType html   setl ts=2 sw=2 sts=2
 au FileType javascript setl ts=2 sw=2 sts=2
+au FileType coffee setl ts=2 sw=2 sts=2
+au FileType jade setl ts=2 sw=2 sts=2
 au FileType jinja  setl ts=2 sw=2 sts=2
 au FileType htmldjango setl ts=2 sw=2 sts=2
 au FileType make   setl ts=4 sw=4 sts=4 noet
@@ -70,7 +71,8 @@ if has("gui_running")
     set imd
     set guifont=Inconsolata\ Bold\ 14
 
-    colorscheme jellybeans
+    colorscheme ir_black
+    "colorscheme jellybeans
 
     set guioptions-=T
     set guioptions-=m
@@ -80,7 +82,7 @@ endif
 
 if has("gui_macvim")
     set guifont=Inconsolata:h16.00
-    set transparency=0
+    "set transparency=7
     set guioptions=egmrLt
 
     set vb
@@ -124,6 +126,15 @@ nnoremap <leader>a i
 nnoremap <leader>p :CtrlP<CR>
 vnoremap <C-Insert> "+y
 vnoremap <S-Insert> "+gP
+
+nnoremap <MiddleMouse> <Nop>
+nnoremap <2-MiddleMouse> <Nop>
+nnoremap <3-MiddleMouse> <Nop>
+nnoremap <4-MiddleMouse> <Nop>
+inoremap <MiddleMouse> <Nop>
+inoremap <2-MiddleMouse> <Nop>
+inoremap <3-MiddleMouse> <Nop>
+inoremap <4-MiddleMouse> <Nop>
 
 function! SearchDash()
     let s:browser = "/usr/bin/open"
