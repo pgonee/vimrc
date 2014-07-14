@@ -113,6 +113,10 @@ let g:syntastic_enable_signs=1
 
 let b:javascript_fold = 0
 
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 0
+
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
 nnoremap <leader>] :let @/ = ""<CR>
