@@ -26,15 +26,15 @@ download_fonts:
 ifneq ($(FONT_PATH), unknown)
 	mkdir -p $(FONT_PATH)
 	wget "http://downloads.sourceforge.net/project/dejavu/dejavu/2.34/dejavu-fonts-ttf-2.34.zip?r=http%3A%2F%2Fdejavu-fonts.org%2Fwiki%2FDownload&ts=1380695998&use_mirror=jaist" -O font.zip
-	wget "http://levien.com/type/myfonts/Inconsolata.otf"
 	mkdir -p ./fonts
 	unzip font.zip -d ./fonts
 	mv ./fonts/*/* ./fonts
-	mv ./Inconsolata.otf ./fonts
 	cp -R ./fonts/ttf/*.ttf $(FONT_PATH)
-	cp -R ./fonts/ttf/*.otf $(FONT_PATH)
 	rm -rf ./fonts
 	rm -rf ./font.zip
+
+	wget "http://levien.com/type/myfonts/Inconsolata.otf"
+	mv ./Inconsolata.otf $(FONT_PATH)
 else
 	echo "Unknown font path, uname is $(OS), path is $(FONT_PATH)"
 endif
@@ -44,7 +44,7 @@ install_vundle:
 	vim +PluginInstall +qall
 
 install_ycm:
-	./vim/bundle/YouCompleteMe/install.sh --clang-completer --system-libclang
+	cd ./vim/bundle/YouCompleteMe && ./install.sh --clang-completer --system-libclang
 
 etc:
 	git config --global core.editor "vim"
