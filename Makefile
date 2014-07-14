@@ -18,6 +18,7 @@ unlink:
 install: link download_fonts install_vundle etc
 
 uninstall: unlink
+	rm -rf ./vim/bundle/Vundle.vim
 
 clean: uninstall
 
@@ -36,9 +37,8 @@ else
 endif
 
 install_vundle:
-	git submodule init
-	git submodule update
-	vim +BundleInstall +qall
+	git clone https://github.com/gmarik/Vundle.vim.git ./vim/bundle/Vundle.vim
+	vim +PluginInstall +qall
 
 etc:
 	git config --global core.editor "vim"

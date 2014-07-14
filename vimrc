@@ -1,41 +1,42 @@
 "vundle setting
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " base
-Bundle 'gmarik/vundle'
-Bundle 'L9'
-Bundle 'pathogen.vim'
-Bundle 'cmdalias.vim'
+Plugin 'gmarik/vundle'
+Plugin 'L9'
+Plugin 'pathogen.vim'
+Plugin 'cmdalias.vim'
 
 " Utilities
-Bundle 'The-NERD-tree'
-Bundle 'The-NERD-Commenter'
-Bundle 'fugitive.vim'
-Bundle 'ctrlp.vim'
-Bundle 'Gundo'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'SuperTab'
-Bundle 'Syntastic'
+Plugin 'The-NERD-tree'
+Plugin 'The-NERD-Commenter'
+Plugin 'fugitive.vim'
+Plugin 'ctrlp.vim'
+Plugin 'Gundo'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'SuperTab'
+Plugin 'Syntastic'
 
 " Language
-Bundle 'go.vim'
-Bundle 'c.vim'
-Bundle 'mako.vim'
-Bundle 'Jinja'
-Bundle 'Markdown'
-Bundle 'mattn/emmet-vim'
-Bundle "pangloss/vim-javascript"
-Bundle 'vim-flake8'
-Bundle 'groenewege/vim-less'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'fatih/vim-go'
+Plugin 'c.vim'
+Plugin 'mako.vim'
+Plugin 'Jinja'
+Plugin 'Markdown'
+Plugin 'mattn/emmet-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'vim-flake8'
+Plugin 'groenewege/vim-less'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'kchmck/vim-coffee-script'
 
 " color
-Bundle 'jellybeans.vim'
+Plugin 'jellybeans.vim'
 
+call vundle#end()
 filetype plugin indent on
 " vundle setting ---
 
