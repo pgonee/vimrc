@@ -19,6 +19,7 @@ Plugin 'Gundo'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'SuperTab'
 Plugin 'Syntastic'
+Plugin 'Valloric/YouCompleteMe'
 
 " Language
 Plugin 'fatih/vim-go'
