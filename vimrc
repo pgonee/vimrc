@@ -72,7 +72,6 @@ if has("gui_running")
     set guifont=Inconsolata\ Bold\ 14
 
     colorscheme ir_black
-    "colorscheme jellybeans
 
     set guioptions-=T
     set guioptions-=m
@@ -82,7 +81,6 @@ endif
 
 if has("gui_macvim")
     set guifont=Inconsolata:h16.00
-    "set transparency=7
     set guioptions=egmrLt
 
     set vb
@@ -92,17 +90,18 @@ endif
 set hlsearch
 hi Search  ctermbg=gray ctermfg=blue
 
-"highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
-"match OverLength /\%81v.\+/
-"autocmd BufNewFile,BufRead *.py match OverLength /\%81v.\+/
+if exists('+colorcolumn')
+    set colorcolumn=80
+else
+    highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
+    match OverLength /\%81v.\+/
+endif
 
 let $JS_CMD='node'
 let NERDTreeIgnore = ['\.pyc$', '\.class$']
 let g:gitgutter_enabled = 1
 
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
-call CmdAlias('workon', 'VirtualEnvActivate')
-call CmdAlias('deactivate', 'VirtualEnvDeactivate')
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc    " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
@@ -116,6 +115,7 @@ let b:javascript_fold = 0
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 0
+let g:ycm_goto_buffer_command = 'new-tab'
 
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
@@ -159,3 +159,5 @@ function! SearchGoogle()
     redraw!
 endfunction
 map <leader><leader>g :call SearchGoogle()<CR>
+
+map <leader><leader>j :YcmCompleter GoToDefinition<CR>
