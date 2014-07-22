@@ -16,7 +16,6 @@ Plugin 'The-NERD-Commenter'
 Plugin 'fugitive.vim'
 Plugin 'ctrlp.vim'
 Plugin 'Gundo'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'Syntastic'
 Plugin 'Valloric/YouCompleteMe'
 
