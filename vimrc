@@ -139,24 +139,12 @@ inoremap <2-MiddleMouse> <Nop>
 inoremap <3-MiddleMouse> <Nop>
 inoremap <4-MiddleMouse> <Nop>
 
-function! SearchDash()
-    let s:browser = "/usr/bin/open"
-    let s:searchString = getline("'<")[getpos("'<")[2]-1:getpos("'>")[2]-1]
-    let s:url = "\"dash://".s:searchString."\""
-    let s:cmd = "silent ! " . s:browser . " " . s:url
-    execute s:cmd
-    redraw!
-endfunction
-map <leader><leader>d :call SearchDash()<CR>
+map <leader>j :YcmCompleter GoToDefinition<CR>
 
-function! SearchGoogle()
-    let s:browser = "/usr/bin/open"
-    let s:searchString = getline("'<")[getpos("'<")[2]-1:getpos("'>")[2]-1]
-    let s:url = "\"http://www.google.co.kr/search?q=".s:searchString."\""
-    let s:cmd = "silent ! " . s:browser . " " . s:url
-    execute s:cmd
-    redraw!
-endfunction
-map <leader><leader>g :call SearchGoogle()<CR>
-
-map <leader><leader>j :YcmCompleter GoToDefinition<CR>
+au FileType go nmap <leader>R <Plug>(go-run)
+au FileType go nmap <leader>B <Plug>(go-build)
+au FileType go nmap <leader>T <Plug>(go-test)
+au FileType go nmap <leader>i <Plug>(go-info)
+au FileType go nmap <leader>d <Plug>(go-doc-vertical)
+au FileType go nmap <leader>b <Plug>(go-doc-browser)
+au FileType go nmap <leader>j <Plug>(go-def-vertical)
