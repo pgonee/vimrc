@@ -141,8 +141,10 @@ inoremap <4-MiddleMouse> <Nop>
 
 map <leader>j :YcmCompleter GoToDefinition<CR>
 
-au FileType go nmap <leader>R <Plug>(go-run)
-au FileType go nmap <leader>B <Plug>(go-build)
+let g:go_fmt_autosave = 0
+au FileType go nmap <leader>f :GoFmt<CR>
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>T <Plug>(go-test)
 au FileType go nmap <leader>i <Plug>(go-info)
 au FileType go nmap <leader>d <Plug>(go-doc-vertical)
