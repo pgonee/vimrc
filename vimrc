@@ -18,9 +18,11 @@ Plugin 'ctrlp.vim'
 Plugin 'Gundo'
 Plugin 'Syntastic'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-surround'
 
 " Language
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 Plugin 'c.vim'
 Plugin 'Jinja'
 Plugin 'Markdown'
@@ -90,10 +92,10 @@ set hlsearch
 hi Search  ctermbg=gray ctermfg=blue
 
 if exists('+colorcolumn')
-    set colorcolumn=80
+    set colorcolumn=100
 else
     highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
-    match OverLength /\%81v.\+/
+    match OverLength /\%101v.\+/
 endif
 
 let $JS_CMD='node'
@@ -118,15 +120,20 @@ let g:ycm_goto_buffer_command = 'new-tab'
 
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tw :tabnext<CR>
+nnoremap <leader>tp :tabprev<CR>
 nnoremap <leader>] :let @/ = ""<CR>
 nnoremap <leader>dd :NERDTree<CR>
 nnoremap <leader>s :w<CR>
-nnoremap <leader>x :x<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>w <ESC><C-w>w
-nnoremap <leader>p <ESC><C-w>p
-nnoremap <leader>a i
 nnoremap <leader>p :CtrlP<CR>
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+inoremap <c-h> <esc>ha
+inoremap <c-j> <esc>ja
+inoremap <c-k> <esc>ka
+inoremap <c-l> <esc>la
 vnoremap <C-Insert> "+y
 vnoremap <S-Insert> "+gP
 
@@ -150,3 +157,5 @@ au FileType go nmap <leader>i <Plug>(go-info)
 au FileType go nmap <leader>d <Plug>(go-doc-vertical)
 au FileType go nmap <leader>b <Plug>(go-doc-browser)
 au FileType go nmap <leader>j <Plug>(go-def-vertical)
+
+let g:airline#extensions#tabline#enabled = 1
