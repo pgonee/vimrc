@@ -137,8 +137,8 @@ inoremap <c-h> <esc>ha
 inoremap <c-j> <esc>ja
 inoremap <c-k> <esc>ka
 inoremap <c-l> <esc>la
-vnoremap <C-Insert> "+y
-vnoremap <S-Insert> "+gP
+vnoremap <leader>c "+y
+vnoremap <leader>v "+gP
 
 nnoremap <MiddleMouse> <Nop>
 nnoremap <2-MiddleMouse> <Nop>
