@@ -54,3 +54,4 @@ nnoremap <localleader>s :w<CR>
 nnoremap <localleader>q :q<CR>
 vnoremap <localleader>c "+y
 vnoremap <localleader>v "+gP
+nnoremap <localleader>v "+gp
