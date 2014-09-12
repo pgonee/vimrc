@@ -1,5 +1,5 @@
 
-set rtp+=~/.vim/loader.vim
+set rtp+=~/.vim/bundle/pgonee
 let g:pgonee_plugins = [
             \"gmarik/vundle",
             \"pathogen.vim",
@@ -15,7 +15,6 @@ let g:pgonee_plugins = [
             \"bling/vim-airline",
             \"tpope/vim-surround",
             \"mattn/emmet-vim",
-            \"fatih/vim-go",
             \"c.vim",
             \"pangloss/vim-javascript",
             \"kchmck/vim-coffee-script",
@@ -23,8 +22,8 @@ let g:pgonee_plugins = [
             \"Markdown",
             \"groenewege/vim-less",
             \"digitaltoad/vim-jade",
-            \"vim-flake8",
             \"jellybeans.vim",
+            \"klen/python-mode",
             \"pgonee"
             \]
 

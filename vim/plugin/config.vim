@@ -49,13 +49,13 @@ if has("gui_macvim")
 endif 
 " }}}
 
-" The-NERD-tree settings {{{
+" The-NERD-tree settings {{{a
 if pgonee#plugin#exists("The-NERD-tree")
     let NERDTreeIgnore = ['\.pyc$', '\.class$', '\.so$', '\.swp$']
 endif
 " }}}
 
-" ctrlp.vim settings {{{
+" ctrlp.vim settings {{{a
 if pgonee#plugin#exists("ctrlp.vim")
     let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 endif 
@@ -72,7 +72,6 @@ endif
 
 " Syntastic settings {{{
 if pgonee#plugin#exists("Syntastic")
-    let g:syntastic_python_checkers=['flake8']
     let g:syntastic_check_on_open=1
     let g:syntastic_enable_signs=1
 endif
