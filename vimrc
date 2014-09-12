@@ -1,5 +1,4 @@
 
-set rtp+=~/.vim/bundle/pgonee
 let g:pgonee_plugins = [
             \"gmarik/vundle",
             \"pathogen.vim",
