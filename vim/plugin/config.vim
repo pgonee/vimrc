@@ -49,13 +49,13 @@ if has("gui_macvim")
 endif 
 " }}}
 
-" The-NERD-tree settings {{{a
+" The-NERD-tree settings {{{
 if pgonee#plugin#exists("The-NERD-tree")
     let NERDTreeIgnore = ['\.pyc$', '\.class$', '\.so$', '\.swp$']
 endif
 " }}}
 
-" ctrlp.vim settings {{{a
+" ctrlp.vim settings {{{
 if pgonee#plugin#exists("ctrlp.vim")
     let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 endif 
