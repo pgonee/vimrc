@@ -15,11 +15,14 @@ if pgonee#plugin#exists("klen/python-mode")
     
     let g:pymode_run_bind = '<localleader>r'
     let g:pymode_breakpoint_bind = '<localleader>b'
+    let g:pymode_rope_goto_definition_bind = '<localleader>j'
+    
+    let g:pymode_rope_rename_bind = '<localleader>RE'
+    let g:pymode_rope_rename_module_bind = '<localleader>RM'
+    let g:pymode_rope_autoimport_bind = '<localleader>AI'
+    let g:pymode_rope_organize_imports_bind = '<localleader>OI'
+
 
     let g:pymode_lint = 0
-    let g:pymode_lint_on_write = 0
-
-    nnoremap <C-c>g <Nop>
-    nnoremap <localleader>j :RopeGotoDefinition<CR>
-    nnoremap <localleader>_lintauto :PymodeLintAuto<CR>
+    let g:pymode_rope_completion = 0
 endif
