@@ -35,7 +35,7 @@ install_vundle:
 	vim +PluginInstall +qall
 
 install_ycm:
-	cd ./vim/bundle/YouCompleteMe && ./install.sh --clang-completer --system-libclang
+	cd ./vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
 etc:
 	git config --global core.editor "vim"
