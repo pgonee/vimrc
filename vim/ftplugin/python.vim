@@ -22,7 +22,17 @@ if pgonee#plugin#exists("klen/python-mode")
     let g:pymode_rope_autoimport_bind = '<localleader>AI'
     let g:pymode_rope_organize_imports_bind = '<localleader>OI'
 
-
     let g:pymode_lint = 0
     let g:pymode_rope_completion = 0
+    let g:pymode_options = 0
+
+    " pymode_options 참고
+    setlocal complete+=t
+    setlocal formatoptions-=t
+    if v:version > 702 && !&relativenumber
+        setlocal number
+    endif
+    setlocal textwidth=79
+    setlocal commentstring=#%s
+    setlocal define=^\s*\\(def\\\\|class\\)
 endif
