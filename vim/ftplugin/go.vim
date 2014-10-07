@@ -9,13 +9,13 @@ setlocal ts=4 sw=4 sts=4
 if pgonee#plugin#exists("fatih/vim-go")
     let g:go_fmt_autosave = 0
 
-    nnoremap <localleader>f :GoFmt<CR>
-    nnoremap <localleader>r <Plug>(go-run)
-    nnoremap <localleader>b <Plug>(go-build)
-    nnoremap <localleader>T <Plug>(go-test)
-    nnoremap <localleader>i <Plug>(go-info)
-    nnoremap <localleader>d <Plug>(go-doc-vertical)
-    nnoremap <localleader>b <Plug>(go-doc-browser)
-    nnoremap <localleader>j <Plug>(go-def-vertical)
+    nmap <localleader>f :GoFmt<CR>
+    nmap <localleader>r <Plug>(go-run)
+    nmap <localleader>b <Plug>(go-build)
+    nmap <localleader>T <Plug>(go-test)
+    nmap <localleader>i <Plug>(go-info)
+    nmap <localleader>d <Plug>(go-doc-vertical)
+    nmap <localleader>b <Plug>(go-doc-browser)
+    nmap <localleader>j <Plug>(go-def-vertical)
 endif
 " }}}
