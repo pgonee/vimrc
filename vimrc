@@ -23,7 +23,8 @@ let g:pgonee_plugins = [
             \"digitaltoad/vim-jade",
             \"jellybeans.vim",
             \"klen/python-mode",
-            \"php.vim"
+            \"php.vim",
+            \"fatih/vim-go"
             \]
 
 call pgonee#loader#start()
