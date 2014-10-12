@@ -29,4 +29,3 @@ let g:pgonee_plugins = [
 
 call pgonee#loader#start()
 call pgonee#init()
-

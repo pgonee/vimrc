@@ -2,7 +2,12 @@
 " Base configurations {{{
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
-colorscheme ir_black
+"colorscheme ir_black
+
+colorscheme jellybeans
+
+"colorscheme badwolf
+
 syntax on
 
 set nu
@@ -31,8 +36,6 @@ endif
 if has("gui_running")
     set imd
     set guifont=Inconsolata\ Bold\ 14
-
-    colorscheme ir_black
 
     set guioptions-=T
     set guioptions-=m

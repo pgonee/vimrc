@@ -7,8 +7,6 @@ setlocal ts=4 sw=4 sts=4
 
 " fatih/vim-go settings {{{
 if pgonee#plugin#exists("fatih/vim-go")
-    let g:go_fmt_autosave = 0
-
     nmap <localleader>f :GoFmt<CR>
     nmap <localleader>r <Plug>(go-run)
     nmap <localleader>b <Plug>(go-build)
