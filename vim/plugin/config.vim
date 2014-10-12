@@ -6,8 +6,6 @@ runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
 colorscheme jellybeans
 
-"colorscheme badwolf
-
 syntax on
 
 set nu
@@ -24,7 +22,7 @@ if &term =~ '^screen'
 endif
 
 set hlsearch
-hi Search  ctermbg=gray ctermfg=blue
+hi Search  ctermbg=gray ctermfg=green
 
 if exists('+colorcolumn')
     set colorcolumn=80
