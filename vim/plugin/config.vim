@@ -22,10 +22,11 @@ if &term =~ '^screen'
 endif
 
 set hlsearch
-hi Search  ctermbg=gray ctermfg=green
+hi Search  ctermbg=darkgray ctermfg=white
 
 if exists('+colorcolumn')
     set colorcolumn=80
+    highlight colorcolumn guibg=red ctermbg=red
 else
     highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
     match OverLength /\%81v.\+/
