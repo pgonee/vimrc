@@ -49,8 +49,22 @@ if pgonee#plugin#exists("Valloric/YouCompleteMe")
 endif
 " }}}
 
+" tpope/vim-surround {{{
+if pgonee#plugin#exists("tpope/vim-surround")
+    nmap <localleader>si ysiw
+    nmap <localleader>sc cs
+    nmap <localleader>sd ds
+endif
+" }}}
+
+" mattn/emmet-vim {{{
+if pgonee#plugin#exists("mattn/emmet-vim")
+    imap <c-\>em <c-y>,
+    nmap <c-\>em <c-y>,
+endif
+" }}}
+
 nnoremap <localleader>] :let @/ = ""<CR>
-nnoremap <localleader>s :w<CR>
 nnoremap <localleader>q :q<CR>
 vnoremap <localleader>c "+y
 vnoremap <localleader>v "+gP

@@ -17,7 +17,6 @@ let g:pgonee_plugins = [
             \"c.vim",
             \"pangloss/vim-javascript",
             \"kchmck/vim-coffee-script",
-            \"Jinja",
             \"Markdown",
             \"groenewege/vim-less",
             \"digitaltoad/vim-jade",
