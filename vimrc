@@ -25,7 +25,8 @@ let g:pgonee_plugins = [
             \"php.vim",
             \"fatih/vim-go",
             \"django.vim",
-            \"xmledit"
+            \"xmledit",
+            \"wavded/vim-stylus"
             \]
 
 call pgonee#loader#start()
