@@ -22,9 +22,10 @@ if &term =~ '^screen'
 endif
 
 set hlsearch
-highlight Search ctermbg=darkgray ctermfg=white
+highlight Search ctermbg=darkgray ctermfg=white guibg=blue guifg=white
 highlight colorcolumn guibg=red ctermbg=red
 highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
+highlight SpellBad guibg=red guifg=white
 
 if has("gui_running")
     set imd
@@ -32,8 +33,6 @@ if has("gui_running")
 
     set guioptions-=T
     set guioptions-=m
-    highlight SpellBad guibg=red guifg=white
-    hi Search guibg=gray guifg=blue
 endif
 
 if has("gui_macvim")
