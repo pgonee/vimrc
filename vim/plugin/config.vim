@@ -20,6 +20,8 @@ set mouse+=a
 if &term =~ '^screen'
     set ttymouse=xterm2
 endif
+set showmatch
+set scrolloff=10
 
 set hlsearch
 highlight Search ctermbg=darkgray ctermfg=white guibg=blue guifg=white
