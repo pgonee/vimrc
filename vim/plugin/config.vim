@@ -2,9 +2,9 @@
 " Base configurations {{{
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
-"colorscheme ir_black
+colorscheme ir_black
 
-colorscheme jellybeans
+"colorscheme jellybeans
 
 syntax on
 
