@@ -26,7 +26,8 @@ let g:pgonee_plugins = [
             \"django.vim",
             \"xmledit",
             \"wavded/vim-stylus",
-            \"klen/python-mode"
+            \"klen/python-mode",
+            \"evidens/vim-twig"
             \]
 
 call pgonee#loader#start()

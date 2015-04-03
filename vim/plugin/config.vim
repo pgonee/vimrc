@@ -31,7 +31,7 @@ highlight SpellBad guibg=red guifg=white
 
 if has("gui_running")
     set imd
-    set guifont=Inconsolata\ Bold\ 14
+    set guifont=Inconsolata\ Bold\ 16
 
     set guioptions-=T
     set guioptions-=m
