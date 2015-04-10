@@ -39,7 +39,7 @@ endif
 
 " ctrlp.vim keymaps {{{
 if pgonee#plugin#exists("ctrlp.vim")
-    nnoremap <localleader>p :CtrlP<CR>
+    "nnoremap <localleader>p :CtrlP<CR>
 endif 
 " }}}
 
