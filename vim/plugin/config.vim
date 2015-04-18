@@ -9,7 +9,7 @@ colorscheme ir_black
 syntax on
 
 set nu
-"set expandtab
+set expandtab
 set tabstop=4 shiftwidth=4 sts=4
 set autoindent
 set fileformat=unix
