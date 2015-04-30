@@ -14,7 +14,8 @@ let g:pgonee_plugins = [
             \"mattn/emmet-vim",
             \"xmledit",
             \"klen/python-mode",
-            \"evidens/vim-twig"
+            \"evidens/vim-twig",
+            \"mitsuhiko/vim-jinja"
             \]
 
 call pgonee#loader#start()
