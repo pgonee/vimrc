@@ -9,14 +9,14 @@ colorscheme ir_black
 syntax on
 
 set nu
-"set expandtab
+set expandtab
 set tabstop=4 shiftwidth=4 sts=4
 set autoindent
 set fileformat=unix
 set backspace=2
 set modeline
 set encoding=utf-8 fileencodings=utf-8,cp949,ucs-bom,korea,iso-2022-kr
-"set mouse+=a
+set mouse+=a
 "if &term =~ '^screen'
     "set ttymouse=xterm2
 "endif
