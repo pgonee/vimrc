@@ -70,3 +70,10 @@ vnoremap <localleader>c "+y
 vnoremap <localleader>v "+gP
 nnoremap <localleader>v "+gp
 nnoremap <localleader>S :sh<CR>
+
+nnoremap <localleader>l :vertical resize +1<CR>
+nnoremap <localleader>h :vertical resize -1<CR>
+nnoremap <localleader>k :resize +1<CR>
+nnoremap <localleader>j :resize -1<CR>
+
+
