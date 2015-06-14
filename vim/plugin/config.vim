@@ -21,7 +21,7 @@ if &term =~ '^screen'
     set ttymouse=xterm2
 endif
 set showmatch
-set scrolloff=10
+set scrolloff=3
 
 set hlsearch
 highlight Search ctermbg=darkgray ctermfg=white guibg=blue guifg=white
@@ -56,7 +56,7 @@ endif
 
 " ctrlp.vim settings {{{
 if pgonee#plugin#exists("ctrlp.vim")
-    let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+    let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc)$'
 endif 
 " }}}
 

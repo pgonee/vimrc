@@ -71,9 +71,9 @@ vnoremap <localleader>v "+gP
 nnoremap <localleader>v "+gp
 nnoremap <localleader>S :sh<CR>
 
-nnoremap <localleader>l :vertical resize +1<CR>
-nnoremap <localleader>h :vertical resize -1<CR>
-nnoremap <localleader>k :resize +1<CR>
-nnoremap <localleader>j :resize -1<CR>
+nnoremap <localleader>L :vertical resize +1<CR>
+nnoremap <localleader>H :vertical resize -1<CR>
+nnoremap <localleader>K :resize +1<CR>
+nnoremap <localleader>J :resize -1<CR>
 
 
