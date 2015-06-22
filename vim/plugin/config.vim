@@ -65,3 +65,10 @@ if pgonee#plugin#exists("Syntastic")
     let g:syntastic_enable_signs=1
 endif
 " }}}
+
+" Supertab Settings {{{
+if pgonee#plugin#exists("ervandew/supertab")
+    let g:SuperTabMappingBackward = '<tab>'
+    let g:SuperTabMappingForward = '<s-tab>'
+endif
+" }}}
