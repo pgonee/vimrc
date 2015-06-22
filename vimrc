@@ -9,16 +9,16 @@ let g:pgonee_plugins = [
             \"fugitive.vim",
             \"ctrlp.vim",
             \"Syntastic",
-            \"Valloric/YouCompleteMe",
             \"bling/vim-airline",
             \"mattn/emmet-vim",
             \"xmledit",
-            \"klen/python-mode",
             \"evidens/vim-twig",
             \"Glench/Vim-Jinja2-Syntax",
             \"jelera/vim-javascript-syntax",
             \"StanAngeloff/php.vim",
-            \"kchmck/vim-coffee-script"
+            \"kchmck/vim-coffee-script",
+            \"davidhalter/jedi-vim",
+            \"ervandew/supertab"
             \]
 
 call pgonee#loader#start()

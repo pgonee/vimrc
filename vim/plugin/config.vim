@@ -49,7 +49,7 @@ endif
 
 " The-NERD-tree settings {{{
 if pgonee#plugin#exists("The-NERD-tree")
-    let NERDTreeIgnore = ['\.pyc$', '\.class$', '\.so$', '\.swp$']
+    let NERDTreeIgnore = ['\.pyc$', '\.class$', '\.so$', '\.swp$', '__pycache__$']
 endif
 " }}}
 
@@ -57,22 +57,6 @@ endif
 if pgonee#plugin#exists("ctrlp.vim")
     let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc)$'
 endif 
-" }}}
-
-" Valloric/YouCompleteMe settings {{{
-if pgonee#plugin#exists("Valloric/YouCompleteMe")
-    let g:ycm_goto_buffer_command = 'new-tab'
-
-    let g:ycm_collect_identifiers_from_tags_files = 1
-    let g:ycm_use_ultisnips_completer = 1
-    let g:ycm_seed_identifiers_with_syntax = 1
-    let g:ycm_complete_in_comments = 1
-    let g:ycm_complete_in_strings = 1
-    let g:ycm_filetype_specific_completion_to_disable = {
-                \'gitcommit': 1,
-                \'php': 1
-                \}
-endif
 " }}}
 
 " Syntastic settings {{{
