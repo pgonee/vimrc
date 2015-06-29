@@ -61,14 +61,13 @@ endif
 
 " Syntastic settings {{{
 if pgonee#plugin#exists("Syntastic")
-    let g:syntastic_check_on_open=1
-    let g:syntastic_enable_signs=1
-endif
-" }}}
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
 
-" Supertab Settings {{{
-if pgonee#plugin#exists("ervandew/supertab")
-    let g:SuperTabMappingBackward = '<tab>'
-    let g:SuperTabMappingForward = '<s-tab>'
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
 endif
 " }}}
