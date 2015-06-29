@@ -15,7 +15,7 @@ unlink:
 	rm -rf $$HOME/.vim 
 	rm -rf $$HOME/.vimrc
 
-install: link download_fonts install_vundle etc
+install: link download_fonts install_vundle install_ycm etc
 
 uninstall: unlink
 	rm -rf ./vim/bundle/Vundle.vim
@@ -33,6 +33,10 @@ endif
 install_vundle:
 	git clone https://github.com/gmarik/Vundle.vim.git ./vim/bundle/Vundle.vim
 	vim +PluginInstall +qall
+
+install_ycm:
+	cd cd vim/bundle/YouCompleteMe
+	./install.sh --clang-completer
 
 etc:
 	git config --global core.editor "vim"
