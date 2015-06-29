@@ -40,7 +40,9 @@ endif
 
 " Valloric/YouCompleteMe keymaps {{{
 if pgonee#plugin#exists("Valloric/YouCompleteMe")
-    nnoremap <localleader>j :YcmCompleter GoToDefinition<CR>
+    nnoremap <localleader>jdc :YcmCompleter GoToDeclaration<CR>
+    nnoremap <localleader>jdf :YcmCompleter GoToDefinition<CR>
+    nnoremap <localleader>ji :YcmCompleter GoToImplementationElseDeclaration<CR>
 endif
 " }}}
 
