@@ -66,7 +66,6 @@ if pgonee#plugin#exists("Syntastic")
     set statusline+=%*
 
     let g:syntastic_always_populate_loc_list = 1
-    "let g:syntastic_auto_loc_list = 1
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
 endif
@@ -78,5 +77,11 @@ if pgonee#plugin#exists("Valloric/YouCompleteMe")
     let g:ycm_collect_identifiers_from_tags_files = 1
     let g:ycm_autoclose_preview_window_after_completion = 1
     let g:ycm_autoclose_preview_window_after_insertion = 1
+endif
+" }}}
+
+" mxw/vim-jsx settings {{{
+if pgonee#plugin#exists("mxw/vim-jsx")
+    let g:jsx_ext_required = 0
 endif
 " }}}
