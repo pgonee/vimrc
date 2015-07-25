@@ -55,7 +55,7 @@ endif
 
 " ctrlp.vim settings {{{
 if pgonee#plugin#exists("ctrlp.vim")
-    let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc)$'
+    let g:ctrlp_custom_ignore = '\v(__pycache__|node_modules|[\/]\.(git|hg|svn|pyc))$'
 endif 
 " }}}
 
