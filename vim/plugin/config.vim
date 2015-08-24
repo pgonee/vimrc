@@ -28,9 +28,12 @@ highlight colorcolumn guibg=red ctermbg=red
 highlight OverLength ctermbg=red ctermfg=white guifg=white guibg=red
 highlight SpellBad guibg=red guifg=white
 
+set lazyredraw
+set ttyfast
+
 if has("gui_running")
     set imd
-    set guifont=Inconsolata\ Bold\ 16
+    set guifont=Inconsolata\ Bold\ 20
 
     set guioptions-=T
     set guioptions-=m
@@ -39,7 +42,7 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-    set guifont=Inconsolata:h16.00
+    set guifont=Inconsolata:h20.00
     set guioptions=egmrLt
 
     set vb
@@ -68,6 +71,10 @@ if pgonee#plugin#exists("Syntastic")
     let g:syntastic_always_populate_loc_list = 1
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
+
+    let g:syntastic_python_checkers=['pyflakes', 'flake8']
+    let g:syntastic_javascript_checkers=['eslint']
+
 endif
 " }}}
 
