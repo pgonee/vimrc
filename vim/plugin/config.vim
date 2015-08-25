@@ -52,13 +52,17 @@ endif
 
 " The-NERD-tree settings {{{
 if pgonee#plugin#exists("The-NERD-tree")
-    let NERDTreeIgnore = ['\.pyc$', '\.class$', '\.so$', '\.swp$', '__pycache__$']
+    let NERDTreeIgnore = ['\.pyc$', '\.class$', '\.so$', '\.swp$', '__pycache__$', '\.beam$']
 endif
 " }}}
 
 " ctrlp.vim settings {{{
 if pgonee#plugin#exists("ctrlp.vim")
-    let g:ctrlp_custom_ignore = '\v(__pycache__|node_modules|[\/]\.(git|hg|svn|pyc))$'
+    "let g:ctrlp_custom_ignore = '\v(__pycache__|node_modules|[\/]\.(git|hg|svn|pyc))$'
+    let g:ctrlp_custom_ignore = {
+                \'dir': '\v(__pycache__|node_modules|[\/]\.(git|hg|svn|pyc))$',
+                \'file': '\v\.(beam)',
+                \}
 endif 
 " }}}
 

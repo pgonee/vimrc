@@ -17,8 +17,10 @@ let g:pgonee_plugins = [
             \"jelera/vim-javascript-syntax",
             \"StanAngeloff/php.vim",
             \"kchmck/vim-coffee-script",
-            \"Valloric/YouCompleteMe"
+            \"Valloric/YouCompleteMe",
+            \"jimenezrick/vimerl"
             \]
+            "\"ervandew/supertab",
 
 call pgonee#loader#start()
 call pgonee#init()
