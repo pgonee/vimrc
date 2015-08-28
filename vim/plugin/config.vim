@@ -19,7 +19,7 @@ set mouse+=a
 if &term =~ '^screen'
     set ttymouse=xterm2
 endif
-set showmatch
+"set showmatch
 set scrolloff=3
 
 set hlsearch
