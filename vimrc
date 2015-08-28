@@ -6,10 +6,10 @@ let g:pgonee_plugins = [
             \"cmdalias.vim",
             \"The-NERD-tree",
             \"The-NERD-Commenter",
+            \"powerline/powerline",
             \"fugitive.vim",
             \"ctrlp.vim",
             \"Syntastic",
-            \"bling/vim-airline",
             \"mattn/emmet-vim",
             \"xmledit",
             \"evidens/vim-twig",
@@ -20,6 +20,7 @@ let g:pgonee_plugins = [
             \"Valloric/YouCompleteMe",
             \"jimenezrick/vimerl"
             \]
+            "\"bling/vim-airline",
             "\"ervandew/supertab",
 
 call pgonee#loader#start()

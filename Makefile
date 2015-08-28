@@ -24,8 +24,9 @@ clean: uninstall
 
 download_fonts:
 ifneq ($(FONT_PATH), unknown)
-	wget "http://levien.com/type/myfonts/Inconsolata.otf"
-	mv ./Inconsolata.otf $(FONT_PATH)
+	#wget "http://levien.com/type/myfonts/Inconsolata.otf"
+	wget "https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf"
+	mv ./Inconsolata\ for\ Powerline.otf $(FONT_PATH)
 else
 	echo "Unknown font path, uname is $(OS), path is $(FONT_PATH)"
 endif
@@ -35,7 +36,7 @@ install_vundle:
 	vim +PluginInstall +qall
 
 install_ycm:
-	cd vim/bundle/YouCompleteMe; ./install.sh --clang-completer
+	cd vim/bundle/YouCompleteMe; ./install.py --clang-completer
 
 etc:
 	git config --global core.editor "vim"
