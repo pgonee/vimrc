@@ -33,7 +33,7 @@ set ttyfast
 
 if has("gui_running")
     set imd
-    set guifont=Inconsolata\ Bold\ 20
+    set guifont=Hack\ 14
 
     set guioptions-=T
     set guioptions-=m
@@ -42,7 +42,7 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-    set guifont=Inconsolata:h20.00
+    set guifont=Hack:h14.00
     set guioptions=egmrLt
 
     set vb
