@@ -18,6 +18,7 @@ let g:pgonee_plugins = [
             \"kchmck/vim-coffee-script",
             \"Valloric/YouCompleteMe",
             \"bling/vim-airline",
+            \"FelikZ/ctrlp-py-matcher",
             \"jimenezrick/vimerl"
             \]
             "\"ervandew/supertab",
