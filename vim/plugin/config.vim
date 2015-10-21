@@ -77,9 +77,24 @@ if pgonee#plugin#exists("Syntastic")
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
 
-    let g:syntastic_python_checkers=['flake8']
-    let g:syntastic_javascript_checkers=['eslint']
+    let g:syntastic_ignore_files = ['\m\c\.py$']
+    let g:syntastic_python_checkers=[]
 
+    let g:syntastic_javascript_checkers=['eslint']
+endif
+" }}}
+
+" python-mode settings {{{
+if pgonee#plugin#exists("klen/python-mode")
+    let g:pymode_rope = 0
+    let g:pymode_folding = 0
+    let g:pymode_rope_completion = 0
+    let g:pymode_motion = 0
+    let g:pymode_options = 0
+    let g:pymode_options_max_line_length = 79
+    let g:pymode_lint_unmodified = 1
+    let g:pymode_run = 0
+    let g:pymode_lint_ignore = ""
 endif
 " }}}
 

@@ -16,12 +16,12 @@ let g:pgonee_plugins = [
             \"jelera/vim-javascript-syntax",
             \"StanAngeloff/php.vim",
             \"kchmck/vim-coffee-script",
-            \"Valloric/YouCompleteMe",
             \"bling/vim-airline",
             \"FelikZ/ctrlp-py-matcher",
+            \"klen/python-mode",
+            \"Valloric/YouCompleteMe",
             \"jimenezrick/vimerl"
             \]
-            "\"ervandew/supertab",
 
 call pgonee#loader#start()
 call pgonee#init()

@@ -17,3 +17,11 @@ function! pgonee#column120()
         match OverLength /\%121v.\+/
     endif
 endfunction
+
+function! pgonee#column100()
+    if exists('+colorcolumn')
+        setlocal colorcolumn=100
+    else
+        match OverLength /\%101v.\+/
+    endif
+endfunction
