@@ -20,7 +20,8 @@ let g:pgonee_plugins = [
             \"FelikZ/ctrlp-py-matcher",
             \"klen/python-mode",
             \"Valloric/YouCompleteMe",
-            \"jimenezrick/vimerl"
+            \"jimenezrick/vimerl",
+            \"Rykka/riv.vim"
             \]
 
 call pgonee#loader#start()
