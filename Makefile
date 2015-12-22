@@ -19,6 +19,8 @@ install: link download_fonts install_vundle etc
 
 install_term: link install_vundle etc
 
+install_term: link install_vundle etc
+
 uninstall: unlink
 	rm -rf ./vim/bundle/Vundle.vim
 
