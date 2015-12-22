@@ -15,7 +15,7 @@ unlink:
 	rm -rf $$HOME/.vim 
 	rm -rf $$HOME/.vimrc
 
-install: link download_fonts install_vundle install_ycm etc
+install: link download_fonts install_vundle etc
 
 install_term: link install_vundle etc
 
