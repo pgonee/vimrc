@@ -18,10 +18,9 @@ let g:pgonee_plugins = [
             \"kchmck/vim-coffee-script",
             \"bling/vim-airline",
             \"FelikZ/ctrlp-py-matcher",
-            \"klen/python-mode",
             \"jimenezrick/vimerl",
             \"Rykka/riv.vim",
-	    \"ervandew/supertab"
+            \"ervandew/supertab"
             \]
 
 call pgonee#loader#start()

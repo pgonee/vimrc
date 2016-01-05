@@ -77,8 +77,7 @@ if pgonee#plugin#exists("Syntastic")
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
 
-    let g:syntastic_ignore_files = ['\m\c\.py$']
-    let g:syntastic_python_checkers=[]
+    let g:syntastic_python_checkers=['flake8']
 
     let g:syntastic_javascript_checkers=['eslint']
 endif
