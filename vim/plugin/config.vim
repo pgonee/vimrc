@@ -3,7 +3,12 @@
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
 "colorscheme ir_black
-colorscheme jellybeans
+"colorscheme jellybeans
+syntax enable
+set background=light
+colorscheme solarized
+let g:solarized_termcolors=256
+
 
 syntax on
 
@@ -33,7 +38,7 @@ set ttyfast
 
 if has("gui_running")
     set imd
-    set guifont=Hack\ 14
+    set guifont=Hack\ 12
 
     set guioptions-=T
     set guioptions-=m
@@ -42,7 +47,7 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-    set guifont=Hack:h14.00
+    set guifont=Hack:h12.00
     set guioptions=egmrLt
 
     set vb

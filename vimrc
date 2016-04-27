@@ -20,7 +20,8 @@ let g:pgonee_plugins = [
             \"FelikZ/ctrlp-py-matcher",
             \"jimenezrick/vimerl",
             \"Rykka/riv.vim",
-            \"ervandew/supertab"
+            \"ervandew/supertab",
+            \"Solarized"
             \]
 
 call pgonee#loader#start()
