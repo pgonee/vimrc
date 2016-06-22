@@ -21,7 +21,7 @@ let g:pgonee_plugins = [
             \"jimenezrick/vimerl",
             \"Rykka/riv.vim",
             \"ervandew/supertab",
-            \"Solarized"
+            \"altercation/vim-colors-solarized"
             \]
 
 call pgonee#loader#start()

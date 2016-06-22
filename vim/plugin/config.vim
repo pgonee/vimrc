@@ -2,15 +2,11 @@
 " Base configurations {{{
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
-"colorscheme ir_black
-"colorscheme jellybeans
 syntax enable
+"colorscheme jellybeans
 set background=light
 colorscheme solarized
 let g:solarized_termcolors=256
-
-
-syntax on
 
 set nu
 set expandtab
