@@ -3,10 +3,7 @@
 runtime! bundle/cmdalias.vim/plugin/cmdalias.vim
 
 syntax enable
-"colorscheme jellybeans
-set background=light
-colorscheme solarized
-let g:solarized_termcolors=256
+colorscheme jellybeans
 
 set nu
 set expandtab
@@ -59,8 +56,6 @@ endif
 
 " ctrlp.vim settings {{{
 if pgonee#plugin#exists("ctrlp.vim")
-    "let g:ctrlp_custom_ignore = '\v(__pycache__|node_modules|[\/]\.(git|hg|svn|pyc))$'
-    let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
     let g:ctrlp_custom_ignore = {
                 \'dir': '\v(__pycache__|node_modules|[\/]\.(git|hg|svn|pyc))$',
                 \'file': '\v\.(beam)',
