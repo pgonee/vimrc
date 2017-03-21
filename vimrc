@@ -43,11 +43,12 @@ filetype plugin indent on
 let python_highlight_all=1
 syntax on
 colorscheme jellybeans
+set hlsearch
 highlight colorcolumn guibg=darkred ctermbg=darkred
 highlight BadWhitespace ctermbg=darkred guibg=darkred
 set colorcolumn=120
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.php match BadWhitespace /\s\+$/
 
 nnoremap <localleader>q :q<cr>
 nnoremap <localleader>dd :NERDTreeToggle<cr>
@@ -56,20 +57,6 @@ nnoremap <localleader>tw :tabnext<cr>
 nnoremap <localleader>tp :tabprev<cr>
 
 nnoremap <c-p> :Files<cr>
-
-"tnoremap <a-h> <c-\><c-n><c-w>h
-"tnoremap <a-j> <c-\><c-n><c-w>j
-"tnoremap <a-k> <c-\><c-n><c-w>k
-"tnoremap <a-l> <c-\><c-n><c-w>l
-
-"tnoremap <c-\>tn <c-\><c-n>:tabnext<cr>
-"tnoremap <c-\>tw <c-\><c-n>:tabnext<cr>
-"tnoremap <c-\>tp <c-\><c-n>:tabprev<cr>
-
-"tnoremap <c-h> <c-\><c-n><c-w>h
-"tnoremap <c-j> <c-\><c-n><c-w>j
-"tnoremap <c-k> <c-\><c-n><c-w>k
-"tnoremap <c-l> <c-\><c-n><c-w>l
 
 nnoremap <c-h> <c-w><c-h>
 nnoremap <c-j> <c-w><c-j>
