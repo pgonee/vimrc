@@ -57,19 +57,19 @@ nnoremap <localleader>tp :tabprev<cr>
 
 nnoremap <c-p> :Files<cr>
 
-tnoremap <a-h> <c-\><c-n><c-w>h
-tnoremap <a-j> <c-\><c-n><c-w>j
-tnoremap <a-k> <c-\><c-n><c-w>k
-tnoremap <a-l> <c-\><c-n><c-w>l
+"tnoremap <a-h> <c-\><c-n><c-w>h
+"tnoremap <a-j> <c-\><c-n><c-w>j
+"tnoremap <a-k> <c-\><c-n><c-w>k
+"tnoremap <a-l> <c-\><c-n><c-w>l
 
-tnoremap <c-\>tn <c-\><c-n>:tabnext<cr>
-tnoremap <c-\>tw <c-\><c-n>:tabnext<cr>
-tnoremap <c-\>tp <c-\><c-n>:tabprev<cr>
+"tnoremap <c-\>tn <c-\><c-n>:tabnext<cr>
+"tnoremap <c-\>tw <c-\><c-n>:tabnext<cr>
+"tnoremap <c-\>tp <c-\><c-n>:tabprev<cr>
 
-tnoremap <c-h> <c-\><c-n><c-w>h
-tnoremap <c-j> <c-\><c-n><c-w>j
-tnoremap <c-k> <c-\><c-n><c-w>k
-tnoremap <c-l> <c-\><c-n><c-w>l
+"tnoremap <c-h> <c-\><c-n><c-w>h
+"tnoremap <c-j> <c-\><c-n><c-w>j
+"tnoremap <c-k> <c-\><c-n><c-w>k
+"tnoremap <c-l> <c-\><c-n><c-w>l
 
 nnoremap <c-h> <c-w><c-h>
 nnoremap <c-j> <c-w><c-j>
