@@ -13,7 +13,9 @@ install_term: link install_plug etc
 install_term: link install_plug etc
 
 uninstall: unlink
-	rm -rf ./vim/bundle/Vundle.vim
+	rm -rf ./vim/autoload/plug.vim
+	rm -rf ./vim/plugin
+	git checkout ./vim/plugin
 
 clean: uninstall
 
